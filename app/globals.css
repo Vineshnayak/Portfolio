@@ -1,0 +1,330 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+  --primary: #FFD700;
+  --accent: #3B82F6;
+  --python-blue: #3776AB;
+  --python-yellow: #FFD43B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3776AB, #FFD43B);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FFD43B, #3776AB);
+}
+
+/* ===== Utility Classes ===== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 30px rgba(55, 118, 171, 0.6), 0 0 60px rgba(255, 212, 59, 0.3);
+  }
+}
+
+/* ===== Section Background Pattern ===== */
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* ===== Floating Python Symbols ===== */
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.15;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(55, 118, 171, 0.3), 0 0 40px rgba(255, 212, 59, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(55, 118, 171, 0.6), 0 0 80px rgba(255, 212, 59, 0.3);
+  }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(160px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(160px) rotate(-360deg); }
+}
+
+@keyframes orbit-reverse {
+  0% { transform: rotate(0deg) translateX(180px) rotate(0deg); }
+  100% { transform: rotate(-360deg) translateX(180px) rotate(360deg); }
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes reverse-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes code-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.animate-float-up { animation: float-up linear infinite; }
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+.animate-gradient-shift { animation: gradient-shift 6s ease infinite; background-size: 200% 200%; }
+.animate-orbit { animation: orbit 20s linear infinite; }
+.animate-orbit-reverse { animation: orbit-reverse 25s linear infinite; }
+.animate-morph { animation: morph 8s ease-in-out infinite; }
+.animate-shimmer { animation: shimmer 2s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 10s linear infinite; }
+.animate-reverse-spin { animation: reverse-spin 15s linear infinite; }
+.animate-code-scroll { animation: code-scroll 20s linear infinite; }
+
+/* ===== Magnetic Cursor Effect ===== */
+.magnetic-hover {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ===== Smooth Section Transitions ===== */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(55, 118, 171, 0.3), rgba(255, 212, 59, 0.3), transparent);
+}
+
+/* ===== Navbar Glassmorphism ===== */
+.navbar-glass {
+  background: rgba(5, 5, 5, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Text Gradient ===== */
+.text-gradient-python {
+  background: linear-gradient(135deg, #3776AB, #FFD43B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Skill Card Hover ===== */
+.skill-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
+  transition: left 0.6s ease;
+}
+
+.skill-card:hover::before {
+  left: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(55, 118, 171, 0.3);
+  box-shadow: 0 8px 32px rgba(55, 118, 171, 0.15);
+}
+
+/* ===== Project Card ===== */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent, transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: background 0.5s ease;
+  pointer-events: none;
+}
+
+.project-card:hover::after {
+  background: linear-gradient(135deg, #3776AB, #FFD43B);
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(55, 118, 171, 0.2);
+}
+
+/* ===== Timeline ===== */
+.timeline-line {
+  background: linear-gradient(180deg, #3776AB, #FFD43B, #3776AB);
+}
+
+/* ===== Certification Badge ===== */
+.cert-badge {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cert-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(255, 212, 59, 0.15);
+  border-color: rgba(255, 212, 59, 0.3);
+}
+
+/* ===== Stats Counter ===== */
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(55, 118, 171, 0.1), transparent, rgba(255, 212, 59, 0.1), transparent);
+  animation: spin-slow 6s linear infinite;
+}
+
+/* ===== Contact Form ===== */
+.contact-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+  width: 100%;
+}
+
+.contact-input:focus {
+  border-color: rgba(55, 118, 171, 0.5);
+  box-shadow: 0 0 20px rgba(55, 118, 171, 0.1);
+}
+
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* ===== Nav Link Indicator ===== */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3776AB, #FFD43B);
+  transition: width 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 1px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ===== Python Code Rain Background ===== */
+.code-rain {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.04;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13px;
+  color: #3776AB;
+}
