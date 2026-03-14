@@ -68,7 +68,7 @@ export default function Navbar() {
                             )}
                         </AnimatePresence>
                         <span className="font-heading font-bold text-lg hidden sm:block">
-                            <span className="text-white">Jatothu Vinesh</span>
+                            <span className="text-white">Vinesh nayak</span>
                         </span>
                     </a>
 

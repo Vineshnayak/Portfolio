@@ -1,6 +1,6 @@
 ---
 
-# Jatothu Vinesh – Portfolio
+# Vinesh nayak – Portfolio
 
 A  web portfolio designed to showcase work in **AI/ML engineering, Python development, and data-driven applications**. The site focuses on clear structure, responsive design, and smooth user interactions.
 
@@ -136,6 +136,6 @@ npm run start
 
 This project structure is intended for personal portfolio use.
 
-**Created by Jatothu Vinesh – Python Developer & AI/ML Enthusiast.**
+**Created by Vinesh nayak – Python Developer & AI/ML Enthusiast.**
 
 ---

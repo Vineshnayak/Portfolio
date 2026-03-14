@@ -14,11 +14,11 @@ export default function Footer() {
                     {/* Left - Logo */}
                     <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-python-blue to-python-yellow flex items-center justify-center font-mono font-bold text-black text-xs">
-                            JV
+                            VN
                         </div>
                         <div>
                             <p className="text-sm font-heading font-bold text-white">
-                                Jatothu Vinesh
+                                Vinesh nayak
                             </p>
                             <p className="text-xs text-gray-500 font-mono">
                                 Python Developer & AI/ML Engineer
@@ -39,7 +39,7 @@ export default function Footer() {
 
                     {/* Right - Year */}
                     <p className="text-xs text-gray-600 font-mono">
-                        © {new Date().getFullYear()} Jatothu Vinesh
+                        © {new Date().getFullYear()} Vinesh nayak
                     </p>
                 </div>
             </div>

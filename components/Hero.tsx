@@ -71,7 +71,7 @@ export default function Hero() {
                     <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1]">
                         Hey, I&apos;m{" "}
                         <br />
-                        <span className="text-gradient-python">Jatothu Vinesh</span>
+                        <span className="text-gradient-python">Vinesh nayak</span>
                     </h1>
 
                     <div className="h-10 flex items-center">
@@ -189,7 +189,7 @@ export default function Hero() {
                         <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-white/10 shadow-2xl">
                             <Image
                                 src="/profile.jpg"
-                                alt="Jatothu Vinesh — Python Developer & AI/ML Engineer"
+                                alt="Vinesh nayak — Python Developer & AI/ML Engineer"
                                 fill
                                 className="object-cover"
                                 priority
