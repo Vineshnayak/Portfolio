@@ -102,13 +102,36 @@ body {
 }
 
 @keyframes orbit {
-  0% { transform: rotate(0deg) translateX(160px) rotate(0deg); }
-  100% { transform: rotate(360deg) translateX(160px) rotate(-360deg); }
+  0% { transform: rotate(0deg) translateX(195px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(195px) rotate(-360deg); }
 }
 
 @keyframes orbit-reverse {
-  0% { transform: rotate(0deg) translateX(180px) rotate(0deg); }
-  100% { transform: rotate(-360deg) translateX(180px) rotate(360deg); }
+  0% { transform: rotate(0deg) translateX(198px) rotate(0deg); }
+  100% { transform: rotate(-360deg) translateX(198px) rotate(360deg); }
+}
+
+/* Mobile-responsive orbit radii */
+@media (max-width: 639px) {
+  @keyframes orbit {
+    0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+  }
+  @keyframes orbit-reverse {
+    0% { transform: rotate(0deg) translateX(108px) rotate(0deg); }
+    100% { transform: rotate(-360deg) translateX(108px) rotate(360deg); }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  @keyframes orbit {
+    0% { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+  }
+  @keyframes orbit-reverse {
+    0% { transform: rotate(0deg) translateX(148px) rotate(0deg); }
+    100% { transform: rotate(-360deg) translateX(148px) rotate(360deg); }
+  }
 }
 
 @keyframes morph {

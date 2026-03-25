@@ -17,12 +17,20 @@ const navLinks = [
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const [pastHero, setPastHero] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
+
+            // Check if scrolled past the hero section
+            const heroEl = document.getElementById("home");
+            if (heroEl) {
+                const heroBottom = heroEl.getBoundingClientRect().bottom;
+                setPastHero(heroBottom <= 80);
+            }
 
             // Determine active section
             const sections = navLinks.map((l) => l.href.replace("#", ""));
@@ -55,7 +63,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <a href="#home" className="flex items-center gap-3 group">
                         <AnimatePresence>
-                            {scrolled && (
+                            {pastHero && (
                                 <motion.div
                                     initial={{ scale: 0, opacity: 0 }}
                                     animate={{ scale: 1, opacity: 1 }}
@@ -67,9 +75,19 @@ export default function Navbar() {
                                 </motion.div>
                             )}
                         </AnimatePresence>
-                        <span className="font-heading font-bold text-lg hidden sm:block">
-                            <span className="text-white">Vinesh nayak</span>
-                        </span>
+                        <AnimatePresence>
+                            {pastHero && (
+                                <motion.span
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -10 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="font-heading font-bold text-lg"
+                                >
+                                    <span className="text-white">Vinesh nayak</span>
+                                </motion.span>
+                            )}
+                        </AnimatePresence>
                     </a>
 
                     {/* Desktop Links */}

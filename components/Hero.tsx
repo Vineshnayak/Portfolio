@@ -169,18 +169,6 @@ export default function Hero() {
                         {/* Outer Glow Ring */}
                         <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-python-blue/20 to-python-yellow/20 blur-xl animate-pulse-glow" />
 
-                        {/* Orbiting Decorations */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="animate-orbit">
-                                <div className="w-3 h-3 rounded-full bg-python-yellow shadow-[0_0_10px_rgba(255,212,59,0.5)]" />
-                            </div>
-                        </div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="animate-orbit-reverse">
-                                <div className="w-2 h-2 rounded-full bg-python-blue shadow-[0_0_10px_rgba(55,118,171,0.5)]" />
-                            </div>
-                        </div>
-
                         {/* Spinning Ring */}
                         <div className="absolute -inset-2 border border-python-blue/20 rounded-full animate-spin-slow" />
                         <div className="absolute -inset-6 border border-python-yellow/10 rounded-full animate-reverse-spin" />
@@ -194,6 +182,18 @@ export default function Hero() {
                                 className="object-cover"
                                 priority
                             />
+                        </div>
+
+                        {/* Orbiting Decorations - rendered after image so they appear on top */}
+                        <div className="absolute inset-0 flex items-center justify-center z-10">
+                            <div className="animate-orbit">
+                                <div className="w-3 h-3 rounded-full bg-python-yellow shadow-[0_0_10px_rgba(255,212,59,0.5)]" />
+                            </div>
+                        </div>
+                        <div className="absolute inset-0 flex items-center justify-center z-10">
+                            <div className="animate-orbit-reverse">
+                                <div className="w-2 h-2 rounded-full bg-python-blue shadow-[0_0_10px_rgba(55,118,171,0.5)]" />
+                            </div>
                         </div>
 
                         {/* Bottom Badge */}
