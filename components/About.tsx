@@ -70,7 +70,7 @@ export default function About() {
                             <ul className="space-y-4 text-gray-300 leading-relaxed text-[16px]">
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>AI/ML undergrad with hands-on experience in CNNs, real-time inference, and data systems</span>
+                                    <span>AI/ML undergrad with hands-on experience in CNNs, YOLO, LLMs, real-time inference, and data systems</span>
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>

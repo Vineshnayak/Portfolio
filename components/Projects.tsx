@@ -7,12 +7,30 @@ import { Github } from "lucide-react";
 const projects = [
     {
         title: "Sentinel Face Secure",
-        tech: ["Python", "MobileNetV2", "OpenCV", "TypeScript", "MongoDB"],
+        tech: ["Python", "MobileNetV2", "FastAPI", "MongoDB", "AES-128"],
         description:
-            "A CNN-based facial authentication system with multi-modal liveness detection — blink analysis, motion tracking, head movement verification, and video spoofing detection. Uses MobileNetV2 for 128-dim face embeddings, Fernet AES encryption for biometric data, RBAC, real-time dashboard, and audit logs. Designed for edge deployment.",
+            "Built a facial authentication system using MobileNetV2 for efficient feature extraction on edge devices. Implemented multi-modal liveness detection (blink, motion, head movement) to prevent spoofing attacks. Developed FastAPI backend with secure encrypted embeddings storage (AES-128) and MongoDB integration.",
         gradient: "from-python-yellow to-amber-500",
         github: "https://github.com/Vineshnayak/Sentinel-Face-Secure",
         featured: true,
+    },
+    {
+        title: "HygieneVision",
+        tech: ["Python", "YOLOv8", "FastAPI", "OpenCV", "MongoDB"],
+        description:
+            "Built a real-time hygiene monitoring system using YOLOv8 for detecting safety violations. Developed an OpenCV-based inference pipeline with improved detection using spatial analysis techniques. Designed REST APIs with FastAPI and integrated MongoDB for event logging and analytics.",
+        gradient: "from-teal-400 to-emerald-500",
+        github: "https://github.com/Vineshnayak/HygieneVision",
+        featured: false,
+    },
+    {
+        title: "CodeSage",
+        tech: ["Python", "RAG", "FAISS", "AST", "LLM"],
+        description:
+            "Developed a code intelligence system using RAG for natural language querying over large codebases. Implemented FAISS-based vector search and AST-based static analysis for complexity and code quality evaluation. Built LLM-powered modules for bug detection and automated code refactoring with optimized outputs.",
+        gradient: "from-purple-500 to-indigo-500",
+        github: "https://github.com/Vineshnayak/CodeSage",
+        featured: false,
     },
     {
         title: "Fake Logo Detection",

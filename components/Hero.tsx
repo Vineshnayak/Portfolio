@@ -23,6 +23,9 @@ const pythonSnippets = [
     "for epoch in range(100):",
     "loss.backward()",
     "optimizer.step()",
+    "from fastapi import FastAPI",
+    "model = YOLO('yolov8n.pt')",
+    "import faiss",
 ];
 
 export default function Hero() {

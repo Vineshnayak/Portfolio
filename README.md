@@ -23,7 +23,7 @@ The project uses a component-based architecture with server-side rendering and o
 Entry section highlighting primary focus areas.
 
 * Smooth scroll navigation
-* Animated background elements representing data flow
+* Animated background elements representing data flow with floating Python, AI, and FastAPI code snippets
 * Profile image with animated gradient border
 
 ---
@@ -33,6 +33,7 @@ Entry section highlighting primary focus areas.
 Provides a concise overview of background and focus areas such as:
 
 * Python-first development approach
+* Hands-on experience in CNNs, YOLO, LLMs, and real-time inference
 * Problem solving and algorithmic thinking
 * Hackathon participation
 
@@ -45,9 +46,9 @@ Built using a **CSS Grid layout** with intersection observers for entry animatio
 Organizes technical skills into domain-based categories:
 
 * Programming Languages
-* AI / Machine Learning
-* Full Stack Development
-* Databases & Tools
+* AI / Machine Learning (including CNNs, YOLOv8, LLM / RAG)
+* Web Dev & Frameworks (including FastAPI, Next.js)
+* Databases & Tools (including MongoDB, FAISS)
 * Systems / Cloud
 
 Each category is displayed using card-based UI elements with subtle hover interactions.
@@ -60,13 +61,12 @@ Highlights selected projects demonstrating practical implementation.
 
 Examples include:
 
-* **Sentinel Face Secure** – Facial authentication using lightweight CNN models (MobileNetV2) for edge devices
-* **Fake Logo Detection** – Object detection using YOLO for identifying counterfeit logos
-* **Rainfall Prediction** – Machine learning models trained on weather datasets
-* **Flight Delay Prediction** – Data pipeline and predictive models using XGBoost with large-scale datasets
+* **Sentinel Face Secure** – Facial authentication system using MobileNetV2 for edge devices with multi-modal liveness detection and secure (AES-128) embeddings storage.
+* **HygieneVision** – Real-time hygiene monitoring system using YOLOv8 and an OpenCV-based inference pipeline for detecting safety violations.
+* **CodeSage** – Code intelligence system using RAG and FAISS-based vector search for natural language querying and automated code refactoring.
+* **Fake Logo Detection** – Desktop application using Convolutional Neural Networks (CNNs) for identifying counterfeit logos.
 
 Projects include associated **technology stacks and implementation details**.
-
 ---
 
 ### 5. Certifications (`/components/Certifications.tsx`)

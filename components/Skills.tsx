@@ -38,6 +38,8 @@ const skillGroups = [
             { name: "OpenCV" },
             { name: "Scikit-learn" },
             { name: "MobileNetV2" },
+            { name: "YOLOv8" },
+            { name: "LLM / RAG" },
         ],
     },
     {
@@ -59,6 +61,7 @@ const skillGroups = [
         accentColor: "text-green-400",
         borderHover: "hover:border-green-400/30",
         items: [
+            { name: "FastAPI", highlight: true },
             { name: "Streamlit" },
             { name: "Tkinter" },
         ],
@@ -71,7 +74,8 @@ const skillGroups = [
         borderHover: "hover:border-orange-400/30",
         items: [
             { name: "SQL" },
-            { name: "MongoDB" },
+            { name: "MongoDB", highlight: true },
+            { name: "FAISS" },
         ],
     },
     {
