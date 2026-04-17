@@ -86,6 +86,7 @@ const skillGroups = [
         borderHover: "hover:border-python-yellow/30",
         items: [
             { name: "Git & GitHub" },
+            { name: "Antigravity" },
             { name: "VS Code" },
             { name: "Jupyter" },
             { name: "Figma" },
@@ -147,11 +148,10 @@ export default function Skills() {
                                 {group.items.map((skill) => (
                                     <span
                                         key={skill.name}
-                                        className={`px-3 py-1.5 text-sm rounded-lg border transition-all duration-300 hover:scale-105 cursor-default ${
-                                            skill.highlight
-                                                ? "bg-python-yellow/10 text-python-yellow border-python-yellow/20 font-semibold"
-                                                : "bg-white/[0.03] text-gray-300 border-white/[0.06] hover:bg-white/[0.06] hover:text-white"
-                                        }`}
+                                        className={`px-3 py-1.5 text-sm rounded-lg border transition-all duration-300 hover:scale-105 cursor-default ${skill.highlight
+                                            ? "bg-python-yellow/10 text-python-yellow border-python-yellow/20 font-semibold"
+                                            : "bg-white/[0.03] text-gray-300 border-white/[0.06] hover:bg-white/[0.06] hover:text-white"
+                                            }`}
                                     >
                                         {skill.name}
                                         {skill.highlight && (
