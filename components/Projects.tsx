@@ -43,27 +43,19 @@ const projects = [
     },
     {
         title: "Rainfall Prediction System",
-        tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
+        tech: ["Python", "Streamlit", "Scikit-learn", "SHAP", "OpenWeather API"],
         description:
-            "ML project that predicts whether it will rain using historical weather data. Trains classification models on weather features, visualizes data distributions with Matplotlib/Seaborn, and outputs predictions to CSV.",
+            "A machine learning web application that predicts rainfall, flood risks, and agricultural suitability. Integrates live OpenWeather API data and features Explainable AI (SHAP) to visualize feature importance for robust predictions.",
         gradient: "from-cyan-500 to-blue-500",
         github: "https://github.com/Vineshnayak/Rainfall-Prediction-Model",
         featured: false,
     },
-    {
-        title: "Flight Delay Prediction",
-        tech: ["Python", "TensorFlow", "Pandas", "Plotly", "Scikit-learn"],
-        description:
-            "ML project that predicts flight arrival delays and visualizes delay behaviour across airports and time periods. Trains a TensorFlow neural network, performs EDA with correlation heatmaps, and supports real-time user-input prediction.",
-        gradient: "from-python-blue to-cyan-500",
-        github: "https://github.com/Vineshnayak/FlightDelayPrediction",
-        featured: false,
-    },
+
     {
         title: "Music Recommendation System",
-        tech: ["Python", "Pandas", "NumPy", "Tkinter"],
+        tech: ["Python", "NLTK", "Scikit-learn", "Pandas", "Jupyter"],
         description:
-            "A Python Tkinter application that recommends songs to users based on popularity calculated from play-count data. Songs are grouped and ranked per user, and the ranked list is displayed in the GUI.",
+            "A content-based music recommendation engine built using NLP and TF-IDF vectorization. Analyzes lyrical content from the Spotify dataset to calculate cosine similarity, recommending songs with the closest linguistic DNA to your favorites.",
         gradient: "from-purple-500 to-pink-500",
         github: "https://github.com/Vineshnayak/MusicRecommendationSystem",
         featured: false,
@@ -86,15 +78,7 @@ const projects = [
         github: "https://github.com/Vineshnayak/SpendSphere",
         featured: false,
     },
-    {
-        title: "E-Ticketing System",
-        tech: ["Java", "Swing"],
-        description:
-            "A desktop application built with Java Swing for booking tickets by entering passenger details and destination. Features input validation, on-screen ticket generation, and form reset functionality.",
-        gradient: "from-blue-500 to-indigo-500",
-        github: "https://github.com/Vineshnayak/ETicketingSystem",
-        featured: false,
-    },
+
 ];
 
 export default function Projects() {

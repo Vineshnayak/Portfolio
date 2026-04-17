@@ -57,7 +57,7 @@ Each category is displayed using card-based UI elements with subtle hover intera
 
 ### 4. Projects (`/components/Projects.tsx`)
 
-Highlights selected projects demonstrating practical implementation.
+Highlights 8 selected projects demonstrating practical implementation.
 
 Examples include:
 
