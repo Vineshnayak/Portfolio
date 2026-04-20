@@ -149,7 +149,7 @@ export default function Hero() {
                             About Me
                         </motion.a>
                         <motion.a
-                            href="/Vinesh-Fresher(AI & ML).pdf"
+                            href="/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
