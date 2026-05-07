@@ -75,7 +75,6 @@ const skillGroups = [
         items: [
             { name: "SQL" },
             { name: "MongoDB", highlight: true },
-            { name: "FAISS" },
         ],
     },
     {
