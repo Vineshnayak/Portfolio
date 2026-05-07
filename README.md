@@ -48,7 +48,7 @@ Organizes technical skills into domain-based categories:
 * Programming Languages
 * AI / Machine Learning (including CNNs, YOLOv8, LLM / RAG)
 * Web Dev & Frameworks (including FastAPI, Next.js)
-* Databases & Tools (including MongoDB, FAISS)
+* Databases & Tools (including MongoDB)
 * Systems / Cloud
 
 Each category is displayed using card-based UI elements with subtle hover interactions.
