@@ -70,15 +70,23 @@ export default function About() {
                             <ul className="space-y-4 text-gray-300 leading-relaxed text-[16px]">
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>AI/ML undergrad with hands-on experience in CNNs, YOLO, LLMs, real-time inference, and data systems</span>
+                                    <span>AI/ML undergraduate focused on building efficient and real-time software systems</span>
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Work across the full pipeline — data cleaning to production deployment</span>
+                                    <span>Hands-on experience in machine learning, computer vision, deep learning, NLP, and CI/CD pipeline automation</span>
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Currently deepening expertise in Python while actively learning AI/ML concepts and advanced SQL for data-driven application development, and contributing to open-source projects on GitHub.</span>
+                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">advanced SQL</strong>, and <strong className="text-white font-semibold">CI/CD pipelines</strong> using <strong className="text-white font-semibold">Jenkins</strong> and <strong className="text-white font-semibold">GitHub Actions</strong></span>
+                                </li>
+                                <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
+                                    <span className="text-python-yellow font-bold mt-0.5">▹</span>
+                                    <span>Actively contributing to open-source projects and building real-time intelligent systems</span>
+                                </li>
+                                <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
+                                    <span className="text-python-yellow font-bold mt-0.5">▹</span>
+                                    <span>Certified in Salesforce Agentforce, Google Cloud Gen-AI, and Cisco programs</span>
                                 </li>
                             </ul>
                         </div>

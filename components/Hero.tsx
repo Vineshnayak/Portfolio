@@ -98,10 +98,10 @@ export default function Hero() {
                     </div>
 
                     <p className="text-base sm:text-lg text-gray-400 max-w-lg leading-relaxed">
-                        Building intelligent systems from{" "}
-                        <span className="text-python-yellow">data cleaning</span> to{" "}
-                        <span className="text-python-blue">production deployment</span>.
-                        Focused on CNNs, real-time inference, and modern web tech.
+                        Building robust solutions from{" "}
+                        <span className="text-python-yellow">intelligent data processing</span> to{" "}
+                        <span className="text-python-blue">automated CI/CD deployment</span>.
+                        Focused on real-time computer vision and data-driven web applications.
                     </p>
 
                     {/* Social Links */}

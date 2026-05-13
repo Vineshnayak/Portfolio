@@ -7,78 +7,76 @@ import { Github } from "lucide-react";
 const projects = [
     {
         title: "Sentinel Face Secure",
-        tech: ["Python", "MobileNetV2", "FastAPI", "MongoDB", "AES-128"],
+        tech: ["Python", "FastAPI", "PyTorch", "MongoDB", "OpenCV"],
         description:
-            "Built a facial authentication system using MobileNetV2 for efficient feature extraction on edge devices. Implemented multi-modal liveness detection (blink, motion, head movement) to prevent spoofing attacks. Developed FastAPI backend with secure encrypted embeddings storage (AES-128) and MongoDB integration.",
+            "A secure facial authentication system using lightweight CNN architectures (MobileNetV2) and YOLO-Nano for real-time identity verification. Features multi-modal liveness detection, RBAC, encrypted vector embedding storage, and AES-128 encryption to prevent spoofing attacks.",
         gradient: "from-python-yellow to-amber-500",
         github: "https://github.com/Vineshnayak/Sentinel-Face-Secure",
         featured: true,
     },
     {
         title: "HygieneVision",
-        tech: ["Python", "YOLOv8", "FastAPI", "OpenCV", "MongoDB"],
+        tech: ["Python", "YOLOv8", "OpenCV", "FastAPI", "Streamlit"],
         description:
-            "Built a real-time hygiene monitoring system using YOLOv8 for detecting safety violations. Developed an OpenCV-based inference pipeline with improved detection using spatial analysis techniques. Designed REST APIs with FastAPI and integrated MongoDB for event logging and analytics.",
+            "A real-time computer vision monitoring system for hygiene compliance detection. Uses YOLOv8 and Haar Cascades for detecting hair caps and gloves. Features a Streamlit dashboard, FastAPI REST API integration, and MongoDB event logging with debounce logic.",
         gradient: "from-teal-400 to-emerald-500",
         github: "https://github.com/Vineshnayak/HygieneVision",
         featured: false,
     },
     {
         title: "CodeSage",
-        tech: ["Python", "RAG", "FAISS", "AST", "LLM"],
+        tech: ["Python", "RAG", "FAISS", "AST", "Groq API"],
         description:
-            "Developed a code intelligence system using RAG for natural language querying over large codebases. Implemented FAISS-based vector search and AST-based static analysis for complexity and code quality evaluation. Built LLM-powered modules for bug detection and automated code refactoring with optimized outputs.",
+            "A local codebase intelligence platform combining Retrieval-Augmented Generation (RAG), AST analysis, vector embeddings, and dependency graph traversal. Features semantic codebase querying, automated bug detection, AI refactoring suggestions, and real-time filesystem monitoring.",
         gradient: "from-purple-500 to-indigo-500",
         github: "https://github.com/Vineshnayak/CodeSage",
         featured: false,
     },
     {
         title: "Fake Logo Detection",
-        tech: ["Python", "Tkinter", "OpenCV", "CNN"],
+        tech: ["Python", "TensorFlow", "Keras", "OpenCV", "Tkinter"],
         description:
-            "Desktop application to detect counterfeit logos using Convolutional Neural Networks. Pre-processed a custom dataset, trained the model with image augmentation, and built a real-time prediction UI with image overlay.",
+            "A desktop-based image classification application that detects fake and original logos using Convolutional Neural Networks and OpenCV. Includes a Tkinter GUI for real-time image prediction, dataset preprocessing, and confusion matrix reporting.",
         gradient: "from-red-500 to-rose-500",
         github: "https://github.com/Vineshnayak/FakeLogo-Detection",
         featured: false,
     },
     {
-        title: "Rainfall Prediction System",
+        title: "Rainfall Prediction Model",
         tech: ["Python", "Streamlit", "Scikit-learn", "SHAP", "OpenWeather API"],
         description:
-            "A machine learning web application that predicts rainfall, flood risks, and agricultural suitability. Integrates live OpenWeather API data and features Explainable AI (SHAP) to visualize feature importance for robust predictions.",
+            "A machine learning web application built with Streamlit for predicting rainfall, flood risks, and agricultural suitability. Integrates historical and live weather data via OpenWeather API, featuring SHAP-based Explainable AI (XAI) for feature importance visualization.",
         gradient: "from-cyan-500 to-blue-500",
         github: "https://github.com/Vineshnayak/Rainfall-Prediction-Model",
         featured: false,
     },
-
     {
         title: "Music Recommendation System",
-        tech: ["Python", "NLTK", "Scikit-learn", "Pandas", "Jupyter"],
+        tech: ["Python", "Scikit-Learn", "NLTK", "Pandas", "NLP"],
         description:
-            "A content-based music recommendation engine built using NLP and TF-IDF vectorization. Analyzes lyrical content from the Spotify dataset to calculate cosine similarity, recommending songs with the closest linguistic DNA to your favorites.",
+            "A content-based recommendation engine leveraging NLP techniques to analyze lyrics, song titles, and artist information. Uses TF-IDF vectorization and Cosine similarity matching to process the Spotify Million Song Dataset and recommend similar tracks.",
         gradient: "from-purple-500 to-pink-500",
         github: "https://github.com/Vineshnayak/MusicRecommendationSystem",
         featured: false,
     },
     {
         title: "GymLog",
-        tech: ["Python", "Streamlit", "SQLite", "SQL"],
+        tech: ["Python", "Streamlit", "SQLite"],
         description:
-            "A smart gym management system with Streamlit web UI featuring CRUD for Members, Trainers, Plans, and Sessions. Includes SQLite database with schema, views, triggers, and automated reports.",
+            "A Streamlit-based gym management application featuring complete CRUD operations and SQLite integration. Tracks members, trainers, plans, and sessions while providing automated reports, session history, and popular plan analytics.",
         gradient: "from-green-500 to-emerald-500",
         github: "https://github.com/Vineshnayak/GymLog",
         featured: false,
     },
     {
         title: "SpendSphere",
-        tech: ["JavaScript", "HTML", "CSS", "Chart.js"],
+        tech: ["Python", "FastAPI", "MongoDB", "WebSockets", "Vanilla JS"],
         description:
-            "Responsive expense tracker with add/edit/delete transactions, monthly budgets with progress bars, search filters, LocalStorage persistence, JSON backup, and interactive Chart.js pie and trend charts.",
+            "A collaborative expense tracking system supporting both personal and group management. Built with FastAPI and MongoDB, it features JWT authentication, real-time synchronization using WebSockets, budget tracking, and interactive spending analytics.",
         gradient: "from-python-yellow to-orange-500",
         github: "https://github.com/Vineshnayak/SpendSphere",
         featured: false,
     },
-
 ];
 
 export default function Projects() {
@@ -105,8 +103,7 @@ export default function Projects() {
                         <span className="text-gradient-gold">Work</span>
                     </h2>
                     <p className="text-gray-500 mt-4 max-w-lg mx-auto text-sm">
-                        From ML prediction pipelines to full-stack data systems — here are
-                        projects I&apos;ve built using Python and modern technologies.
+                        From computer vision and RAG systems to web applications and CI/CD pipelines — here are the projects I&apos;ve built using Python and modern technologies.
                     </p>
                 </motion.div>
 

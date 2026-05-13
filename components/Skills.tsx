@@ -9,11 +9,17 @@ import {
     Wrench,
     Database,
     Terminal,
+    BarChart,
+    GitBranch,
+    Layout,
+    Server,
+    Cloud,
+    Palette
 } from "lucide-react";
 
 const skillGroups = [
     {
-        category: "Languages",
+        category: "Programming Languages",
         icon: Code2,
         color: "from-python-blue to-blue-400",
         accentColor: "text-python-blue",
@@ -21,49 +27,70 @@ const skillGroups = [
         items: [
             { name: "Python", highlight: true },
             { name: "Java" },
-            { name: "C/C++" },
+            { name: "C" },
+            { name: "C++" },
             { name: "JavaScript" },
+            { name: "TypeScript" },
             { name: "SQL" },
         ],
     },
     {
-        category: "AI / ML",
+        category: "Frontend Development",
+        icon: Layout,
+        color: "from-cyan-400 to-blue-500",
+        accentColor: "text-cyan-400",
+        borderHover: "hover:border-cyan-400/30",
+        items: [
+            { name: "HTML5" },
+            { name: "CSS3" },
+            { name: "React" },
+            { name: "Vite" },
+            { name: "Tailwind CSS" },
+            { name: "Radix UI" },
+        ],
+    },
+    {
+        category: "Backend Dev & APIs",
+        icon: Server,
+        color: "from-green-400 to-emerald-500",
+        accentColor: "text-green-400",
+        borderHover: "hover:border-green-400/30",
+        items: [
+            { name: "Flask" },
+            { name: "FastAPI", highlight: true },
+            { name: "Uvicorn" },
+            { name: "WebSockets" },
+        ],
+    },
+    {
+        category: "AI/ML & Deep Learning",
         icon: Brain,
         color: "from-purple-500 to-pink-500",
         accentColor: "text-purple-400",
         borderHover: "hover:border-purple-400/30",
         items: [
-            { name: "Machine Learning" },
-            { name: "CNNs" },
             { name: "OpenCV" },
             { name: "Scikit-learn" },
-            { name: "MobileNetV2" },
+            { name: "TensorFlow" },
+            { name: "Keras" },
+            { name: "PyTorch" },
             { name: "YOLOv8" },
-            { name: "LLM / RAG" },
+            { name: "MobileNetV2" },
         ],
     },
     {
-        category: "Web Dev",
-        icon: Globe,
-        color: "from-cyan-400 to-blue-500",
-        accentColor: "text-cyan-400",
-        borderHover: "hover:border-cyan-400/30",
+        category: "Data Science",
+        icon: BarChart,
+        color: "from-indigo-400 to-purple-500",
+        accentColor: "text-indigo-400",
+        borderHover: "hover:border-indigo-400/30",
         items: [
-            { name: "HTML/CSS" },
-            { name: "JavaScript" },
-            { name: "Vite" },
-        ],
-    },
-    {
-        category: "Frameworks",
-        icon: Terminal,
-        color: "from-green-400 to-emerald-500",
-        accentColor: "text-green-400",
-        borderHover: "hover:border-green-400/30",
-        items: [
-            { name: "FastAPI", highlight: true },
-            { name: "Streamlit" },
-            { name: "Tkinter" },
+            { name: "Pandas" },
+            { name: "NumPy" },
+            { name: "Matplotlib" },
+            { name: "Seaborn" },
+            { name: "Plotly" },
+            { name: "Jupyter" },
         ],
     },
     {
@@ -73,23 +100,70 @@ const skillGroups = [
         accentColor: "text-orange-400",
         borderHover: "hover:border-orange-400/30",
         items: [
-            { name: "SQL" },
             { name: "MongoDB", highlight: true },
+            { name: "PostgreSQL" },
+            { name: "SQLite" },
         ],
     },
     {
-        category: "Tools & Design",
+        category: "DevOps & Version Control",
+        icon: GitBranch,
+        color: "from-red-400 to-rose-500",
+        accentColor: "text-red-400",
+        borderHover: "hover:border-red-400/30",
+        items: [
+            { name: "Jenkins" },
+            { name: "GitHub Actions" },
+            { name: "Git" },
+            { name: "GitHub" },
+        ],
+    },
+    {
+        category: "Frameworks & Apps",
+        icon: Terminal,
+        color: "from-teal-400 to-emerald-500",
+        accentColor: "text-teal-400",
+        borderHover: "hover:border-teal-400/30",
+        items: [
+            { name: "Streamlit" },
+            { name: "Tkinter" },
+            { name: "Java Swing" },
+        ],
+    },
+    {
+        category: "Cloud Platforms & APIs",
+        icon: Cloud,
+        color: "from-sky-400 to-blue-500",
+        accentColor: "text-sky-400",
+        borderHover: "hover:border-sky-400/30",
+        items: [
+            { name: "Vercel" },
+            { name: "OpenWeather API" },
+            { name: "OpenStreetMap" },
+        ],
+    },
+    {
+        category: "UI/UX Design",
+        icon: Palette,
+        color: "from-pink-400 to-rose-500",
+        accentColor: "text-pink-400",
+        borderHover: "hover:border-pink-400/30",
+        items: [
+            { name: "Figma" },
+            { name: "Canva" },
+            { name: "Stitch" },
+        ],
+    },
+    {
+        category: "Development Tools",
         icon: Wrench,
         color: "from-python-yellow to-amber-400",
         accentColor: "text-python-yellow",
         borderHover: "hover:border-python-yellow/30",
         items: [
-            { name: "Git & GitHub" },
-            { name: "Antigravity" },
             { name: "VS Code" },
-            { name: "Jupyter" },
-            { name: "Figma" },
-            { name: "Canva" },
+            { name: "Replit" },
+            { name: "Antigravity" },
         ],
     },
 ];
@@ -113,8 +187,7 @@ export default function Skills() {
                         <span className="text-gradient-python">Arsenal</span>
                     </h2>
                     <p className="text-gray-500 mt-4 max-w-lg mx-auto text-sm">
-                        Used across face authentication, logo detection, ML prediction
-                        pipelines, data management systems, and more.
+                        Applied across facial authentication, computer vision monitoring, codebase intelligence, web platforms, and CI/CD pipelines.
                     </p>
                 </motion.div>
 
