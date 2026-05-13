@@ -30,12 +30,12 @@ Entry section highlighting primary focus areas.
 
 ### 2. About (`/components/About.tsx`)
 
-Provides a concise overview of background and focus areas such as:
+Provides a comprehensive overview of background and focus areas, highlighting:
 
-* Python-first development approach
-* Hands-on experience in CNNs, YOLO, LLMs, and real-time inference
-* Problem solving and algorithmic thinking
-* Hackathon participation
+* Expertise in building efficient, real-time AI/ML software systems
+* Hands-on experience with deep learning, computer vision, NLP, and CI/CD pipelines
+* Proficiency in Python, FastAPI, MongoDB, PyTorch, TensorFlow, and OpenCV
+* Open-source contributions and active pursuit of advanced systems engineering
 
 Built using a **CSS Grid layout** with intersection observers for entry animations.
 
@@ -43,30 +43,31 @@ Built using a **CSS Grid layout** with intersection observers for entry animatio
 
 ### 3. Skills (`/components/Skills.tsx`)
 
-Organizes technical skills into domain-based categories:
+Organizes technical skills into 11 detailed, domain-based categories:
 
-* Programming Languages
-* AI / Machine Learning (including CNNs, YOLOv8, LLM / RAG)
-* Web Dev & Frameworks (including FastAPI, Next.js)
-* Databases & Tools (including MongoDB)
-* Systems / Cloud
+* Programming Languages (Python, Java, C++, TypeScript, SQL)
+* AI/ML & Deep Learning (PyTorch, TensorFlow, OpenCV, YOLOv8)
+* Backend Dev & APIs (FastAPI, Flask, WebSockets)
+* DevOps & Version Control (Jenkins, GitHub Actions, Git)
+* Frontend Development, Data Science, Databases, Cloud Platforms, UI/UX, and Dev Tools.
 
-Each category is displayed using card-based UI elements with subtle hover interactions.
+Each category is displayed using glass-card UI elements with custom badges, dynamic icons, and hover interactions.
 
 ---
 
 ### 4. Projects (`/components/Projects.tsx`)
 
-Highlights 8 selected projects demonstrating practical implementation.
+Highlights key projects spanning computer vision, RAG systems, web applications, and CI/CD pipelines.
 
-Examples include:
+Featured examples include:
 
-* **Sentinel Face Secure** – Facial authentication system using MobileNetV2 for edge devices with multi-modal liveness detection and secure (AES-128) embeddings storage.
-* **HygieneVision** – Real-time hygiene monitoring system using YOLOv8 and an OpenCV-based inference pipeline for detecting safety violations.
-* **CodeSage** – Code intelligence system using RAG and FAISS-based vector search for natural language querying and automated code refactoring.
-* **Fake Logo Detection** – Desktop application using Convolutional Neural Networks (CNNs) for identifying counterfeit logos.
+* **Sentinel Face Secure** – Secure facial authentication system with liveness detection and encrypted vector embeddings (FastAPI, PyTorch, React).
+* **HygieneVision** – Real-time computer vision system for hygiene compliance using YOLOv8 and FastAPI.
+* **CodeSage** – Local codebase intelligence platform with RAG, AST parsing, and FAISS-based semantic querying.
+* **SpendSphere** – Collaborative expense tracker featuring WebSockets for real-time synchronization and JWT authentication.
+* **PyCalcCI** – Complete CI/CD automated deployment workflow built with Jenkins and pytest.
 
-Projects include associated **technology stacks and implementation details**.
+Projects are rendered using dynamic grid layouts, animated hover states, and clear tech-stack tagging.
 ---
 
 ### 5. Certifications (`/components/Certifications.tsx`)
