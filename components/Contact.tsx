@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Github, Linkedin, Mail, Youtube } from "lucide-react";
+import { Github, Linkedin, Mail, Youtube, Figma } from "lucide-react";
 
 const socialLinks = [
     {
@@ -25,6 +25,13 @@ const socialLinks = [
         href: "https://www.youtube.com/@Vinesh_nayak",
         color: "hover:text-red-500 hover:border-red-500/20",
         label: "@Vinesh_nayak",
+    },
+    {
+        name: "Figma",
+        icon: Figma,
+        href: "https://figma.com/@vineshnayak",
+        color: "hover:text-fuchsia-400 hover:border-fuchsia-400/30",
+        label: "@vineshnayak",
     },
     {
         name: "Email",
@@ -68,7 +75,7 @@ export default function Contact() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.7, delay: 0.2 }}
-                        className="flex flex-wrap justify-center gap-6"
+                        className="flex flex-nowrap justify-center gap-4"
                     >
                         {socialLinks.map((social, idx) => (
                             <motion.a
@@ -79,12 +86,12 @@ export default function Contact() {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                                 transition={{ delay: 0.3 + idx * 0.1, duration: 0.5 }}
-                                className={`glass-card flex flex-col items-center justify-center gap-4 w-36 h-36 group transition-all duration-300 ${social.color} hover:-translate-y-2 hover:shadow-lg`}
+                                className={`glass-card flex flex-col items-center justify-center gap-3 w-28 h-28 group transition-all duration-300 ${social.color} hover:-translate-y-2 hover:shadow-lg`}
                             >
-                                <div className="p-4 bg-white/[0.03] border border-white/[0.06] rounded-xl group-hover:scale-110 transition-transform duration-300">
-                                    <social.icon className="w-8 h-8" />
+                                <div className="p-3 bg-white/[0.03] border border-white/[0.06] rounded-xl group-hover:scale-110 transition-transform duration-300">
+                                    <social.icon className="w-6 h-6" />
                                 </div>
-                                <span className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors">
+                                <span className="text-xs font-bold text-gray-300 group-hover:text-white transition-colors">
                                     {social.name}
                                 </span>
                             </motion.a>

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Code2, Brain, Database, Trophy, Rocket } from "lucide-react";
+import { Code2, Brain, Database, Trophy, Palette } from "lucide-react";
 
 const highlights = [
     {
@@ -22,9 +22,9 @@ const highlights = [
         bgColor: "bg-cyan-400/5",
     },
     {
-        icon: Rocket,
-        title: "Hackathons",
-        desc: "Active participant in various hackathons, applying AI/ML principles and Python programming to build practical, data-driven solutions.",
+        icon: Palette,
+        title: "UI/UX Design",
+        desc: "Experienced in crafting user interfaces and design prototypes using Figma, Google Stitch, Replit, and Canva.",
         color: "text-purple-400",
         borderColor: "border-purple-400/20",
         bgColor: "bg-purple-400/5",

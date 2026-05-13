@@ -32,9 +32,7 @@ export default function Footer() {
                         whileInView={{ opacity: 1 }}
                         className="text-xs text-gray-600 flex items-center gap-1"
                     >
-                        Built with{" "}
-                        <Heart className="w-3 h-3 text-red-500 fill-red-500 inline" />{" "}
-                        using Next.js & Tailwind CSS
+                        Meticulously architected with Next.js & Tailwind CSS
                     </motion.p>
 
                     {/* Right - Year */}
