@@ -94,7 +94,7 @@ Provides direct links to professional profiles and communication channels:
 
 * GitHub
 * LinkedIn
-* YouTube
+* Figma
 * Email
 
 Built with a responsive layout and optimized SVG icons.

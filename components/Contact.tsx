@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Github, Linkedin, Mail, Youtube, Figma } from "lucide-react";
+import { Github, Linkedin, Mail, Figma } from "lucide-react";
 
 const socialLinks = [
     {
@@ -18,13 +18,6 @@ const socialLinks = [
         href: "https://linkedin.com/in/vineshnayak",
         color: "hover:text-blue-400 hover:border-blue-400/20",
         label: "Vinesh Nayak",
-    },
-    {
-        name: "YouTube",
-        icon: Youtube,
-        href: "https://www.youtube.com/@Vinesh_nayak",
-        color: "hover:text-red-500 hover:border-red-500/20",
-        label: "@Vinesh_nayak",
     },
     {
         name: "Figma",
