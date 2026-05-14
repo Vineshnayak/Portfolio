@@ -78,15 +78,13 @@ export default function About() {
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">advanced SQL</strong>, and <strong className="text-white font-semibold">CI/CD pipelines</strong> using <strong className="text-white font-semibold">Jenkins</strong> and <strong className="text-white font-semibold">GitHub Actions</strong></span>
-                                </li>
+                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">advanced SQL</strong>, and <strong className="text-white font-semibold">CI/CD pipelines</strong> with <strong className="text-white font-semibold">Jenkins/GitHub Actions</strong></span>                                </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Actively contributing to open-source projects and building real-time intelligent systems</span>
-                                </li>
+                                    <span>Actively contributing to open-source projects and developing real-time software solutions</span>                                </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Certified in Salesforce Agentforce, Google Cloud Gen-AI, and Cisco programs</span>
+                                    <span>Certified in Salesforce Agentforce, Google Cloud Gen-AI, Cisco and Government recognized IT programs</span>
                                 </li>
                             </ul>
                         </div>
