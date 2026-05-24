@@ -16,7 +16,7 @@ const educationItems = [
         title: "B.Tech in Artificial Intelligence & Machine Learning",
         org: "CMR College of Engineering & Technology",
         location: "Medchal, Hyderabad",
-        detail: "CGPA: 8.21",
+        detail: "CGPA: 8.33",
         detailColor: "text-python-yellow",
         logo: "/cmr.png",
     },
@@ -86,9 +86,8 @@ export default function Experience() {
                                     delay: idx * 0.2,
                                     ease: [0.23, 1, 0.32, 1],
                                 }}
-                                className={`relative flex flex-col md:flex-row items-start gap-6 md:gap-12 ${
-                                    idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                                }`}
+                                className={`relative flex flex-col md:flex-row items-start gap-6 md:gap-12 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                                    }`}
                             >
                                 {/* Timeline Dot */}
                                 <div className="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 z-10">
@@ -99,17 +98,15 @@ export default function Experience() {
 
                                 {/* Content Card */}
                                 <div
-                                    className={`ml-12 md:ml-0 md:w-[calc(50%-40px)] ${
-                                        idx % 2 === 0 ? "md:text-right" : "md:text-left"
-                                    }`}
+                                    className={`ml-12 md:ml-0 md:w-[calc(50%-40px)] ${idx % 2 === 0 ? "md:text-right" : "md:text-left"
+                                        }`}
                                 >
                                     <div className="glass-card p-6 group hover:border-white/10 transition-all duration-300 skill-card">
                                         <div
-                                            className={`flex items-center gap-3 mb-3 ${
-                                                idx % 2 === 0
+                                            className={`flex items-center gap-3 mb-3 ${idx % 2 === 0
                                                     ? "md:flex-row-reverse md:justify-start"
                                                     : ""
-                                            }`}
+                                                }`}
                                         >
                                             <div className="p-2 rounded-lg bg-white/[0.03] border border-white/[0.06]">
                                                 <item.icon className={`w-4 h-4 ${item.color}`} />
