@@ -74,11 +74,12 @@ export default function About() {
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Hands-on experience in machine learning, computer vision, deep learning, NLP, and CI/CD pipeline automation</span>
+                                    <span>Hands-on experience in machine learning, computer vision, deep learning, CI/CD pipelines and n8n workflow automation</span>
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">advanced SQL</strong>, and <strong className="text-white font-semibold">CI/CD pipelines</strong> with <strong className="text-white font-semibold">Jenkins/GitHub Actions</strong></span>                                </li>
+                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">advanced SQL</strong>, <strong className="text-white font-semibold">CI/CD pipelines</strong>, and <strong className="text-white font-semibold">n8n automation</strong>.</span>
+                                </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
                                     <span>Actively contributing to open-source projects and developing real-time software solutions</span>                                </li>

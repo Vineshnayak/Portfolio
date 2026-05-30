@@ -164,6 +164,7 @@ const skillGroups = [
             { name: "VS Code" },
             { name: "Replit" },
             { name: "Antigravity" },
+            { name: "n8n" },
         ],
     },
 ];
