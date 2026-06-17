@@ -99,9 +99,9 @@ export default function Hero() {
 
                     <p className="text-base sm:text-lg text-gray-400 max-w-lg leading-relaxed">
                         Building practical solutions from{" "}
-                        <span className="text-python-yellow">efficient data processing</span> to{" "}
-                        <span className="text-python-blue">automated CI/CD deployment</span>.
-                        Focused on real-time computer vision and data-driven web applications.
+                        <span className="text-python-yellow">computer vision and machine learning</span> to{" "}
+                        <span className="text-python-blue">developer tools and web applications</span>.
+                        Focused on real-world software development.
                     </p>
 
                     {/* Social Links */}

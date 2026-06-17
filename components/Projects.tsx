@@ -2,17 +2,38 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
     {
         title: "Sentinel Face Secure",
-        tech: ["Python", "FastAPI", "PyTorch", "MongoDB", "OpenCV"],
+        tech: ["React", "FastAPI", "OpenCV", "MongoDB", "Groq API"],
         description:
-            "A secure facial authentication system using lightweight CNN architectures (MobileNetV2) and YOLO-Nano for real-time identity verification. Features multi-modal liveness detection, RBAC, encrypted vector embedding storage, and AES-128 encryption to prevent spoofing attacks.",
+            "A facial authentication and security monitoring platform implementing real-time webcam face verification with anti-spoofing algorithms, a highly responsive React frontend dashboard, and an AI-powered agent (via Groq API) for SOC analysis.",
         gradient: "from-python-yellow to-amber-500",
         github: "https://github.com/Vineshnayak/Sentinel-Face-Secure",
+        live: "https://sentinel-face-secure.vercel.app/",
         featured: true,
+    },
+    {
+        title: "CodeSage",
+        tech: ["Python", "RAG", "FAISS", "AST", "Groq API"],
+        description:
+            "A codebase analysis tool combining static analysis and Retrieval-Augmented Generation (RAG) to assist with code exploration and refactoring. Uses AST parsing, vector embeddings, and dependency graph traversal to answer architectural queries.",
+        gradient: "from-purple-500 to-indigo-500",
+        github: "https://github.com/Vineshnayak/CodeSage",
+        live: "https://huggingface.co/spaces/Vineshnayak/CodeSage",
+        featured: false,
+    },
+    {
+        title: "FaultSnap",
+        tech: ["Python", "Jinja2", "CLI", "HTML"],
+        description:
+            "A black-box recorder for Python applications. Captures the execution context, local variables, and execution stack when a program crashes, storing them in a portable archive with an interactive offline HTML diagnostic dashboard for easy debugging.",
+        gradient: "from-green-500 to-emerald-500",
+        github: "https://github.com/Vineshnayak/PyPi/tree/main/FaultSnap",
+        live: "https://pypi.org/project/FaultSnap/",
+        featured: false,
     },
     {
         title: "HygieneVision",
@@ -21,15 +42,7 @@ const projects = [
             "A real-time computer vision monitoring system for hygiene compliance detection. Uses YOLOv8 and Haar Cascades for detecting hair caps and gloves. Features a Streamlit dashboard, FastAPI REST API integration, and MongoDB event logging with debounce logic.",
         gradient: "from-teal-400 to-emerald-500",
         github: "https://github.com/Vineshnayak/HygieneVision",
-        featured: false,
-    },
-    {
-        title: "CodeSage",
-        tech: ["Python", "RAG", "FAISS", "AST", "Groq API"],
-        description:
-            "A local codebase intelligence platform combining Retrieval-Augmented Generation (RAG), AST analysis, vector embeddings, and dependency graph traversal. Features semantic codebase querying, automated bug detection, AI refactoring suggestions, and real-time filesystem monitoring.",
-        gradient: "from-purple-500 to-indigo-500",
-        github: "https://github.com/Vineshnayak/CodeSage",
+        live: "",
         featured: false,
     },
     {
@@ -39,6 +52,7 @@ const projects = [
             "A desktop-based image classification application that detects fake and original logos using Convolutional Neural Networks and OpenCV. Includes a Tkinter GUI for real-time image prediction, dataset preprocessing, and confusion matrix reporting.",
         gradient: "from-red-500 to-rose-500",
         github: "https://github.com/Vineshnayak/FakeLogo-Detection",
+        live: "",
         featured: false,
     },
     {
@@ -48,6 +62,7 @@ const projects = [
             "A machine learning web application built with Streamlit for predicting rainfall, flood risks, and agricultural suitability. Integrates historical and live weather data via OpenWeather API, featuring SHAP-based Explainable AI (XAI) for feature importance visualization.",
         gradient: "from-cyan-500 to-blue-500",
         github: "https://github.com/Vineshnayak/Rainfall-Prediction-Model",
+        live: "",
         featured: false,
     },
     {
@@ -57,15 +72,7 @@ const projects = [
             "A content-based recommendation engine leveraging NLP techniques to analyze lyrics, song titles, and artist information. Uses TF-IDF vectorization and Cosine similarity matching to process the Spotify Million Song Dataset and recommend similar tracks.",
         gradient: "from-purple-500 to-pink-500",
         github: "https://github.com/Vineshnayak/MusicRecommendationSystem",
-        featured: false,
-    },
-    {
-        title: "GymLog",
-        tech: ["Python", "Streamlit", "SQLite"],
-        description:
-            "A Streamlit-based gym management application featuring complete CRUD operations and SQLite integration. Tracks members, trainers, plans, and sessions while providing automated reports, session history, and popular plan analytics.",
-        gradient: "from-green-500 to-emerald-500",
-        github: "https://github.com/Vineshnayak/GymLog",
+        live: "",
         featured: false,
     },
     {
@@ -75,6 +82,7 @@ const projects = [
             "A collaborative expense tracking system supporting both personal and group management. Built with FastAPI and MongoDB, it features JWT authentication, real-time synchronization using WebSockets, budget tracking, and interactive spending analytics.",
         gradient: "from-python-yellow to-orange-500",
         github: "https://github.com/Vineshnayak/SpendSphere",
+        live: "",
         featured: false,
     },
 ];
@@ -103,8 +111,7 @@ export default function Projects() {
                         <span className="text-gradient-gold">Work</span>
                     </h2>
                     <p className="text-gray-500 mt-4 max-w-lg mx-auto text-sm">
-                        From computer vision and RAG systems to web applications and CI/CD pipelines — here are the projects I&apos;ve built using Python and modern technologies.
-                    </p>
+                        From computer vision and machine learning to developer tools and web applications — here are the projects I&apos;ve built using Python and modern technologies.                    </p>
                 </motion.div>
 
                 {/* Featured Project — full width hero card */}
@@ -131,14 +138,28 @@ export default function Projects() {
                                             01
                                         </span>
                                     </div>
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2.5 bg-white/[0.05] border border-white/[0.08] rounded-xl text-gray-400 hover:text-python-yellow hover:border-python-yellow/30 hover:bg-python-yellow/[0.05] transition-all duration-300"
-                                    >
-                                        <Github size={18} />
-                                    </a>
+                                    <div className="flex gap-2">
+                                        {project.github && project.github !== "#" && (
+                                            <a
+                                                href={project.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="p-2.5 bg-white/[0.05] border border-white/[0.08] rounded-xl text-gray-400 hover:text-python-yellow hover:border-python-yellow/30 hover:bg-python-yellow/[0.05] transition-all duration-300"
+                                            >
+                                                <Github size={18} />
+                                            </a>
+                                        )}
+                                        {project.live && project.live !== "#" && (
+                                            <a
+                                                href={project.live}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="p-2.5 bg-white/[0.05] border border-white/[0.08] rounded-xl text-gray-400 hover:text-python-yellow hover:border-python-yellow/30 hover:bg-python-yellow/[0.05] transition-all duration-300"
+                                            >
+                                                <ExternalLink size={18} />
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
 
                                 {/* Title */}
@@ -156,11 +177,10 @@ export default function Projects() {
                                     {project.tech.map((t) => (
                                         <span
                                             key={t}
-                                            className={`px-3 py-1.5 text-[11px] font-mono rounded-lg border ${
-                                                t === "Python"
+                                            className={`px-3 py-1.5 text-[11px] font-mono rounded-lg border ${t === "Python"
                                                     ? "bg-python-yellow/10 text-python-yellow border-python-yellow/20"
                                                     : "bg-white/[0.03] text-gray-400 border-white/[0.06]"
-                                            }`}
+                                                }`}
                                         >
                                             {t}
                                         </span>
@@ -209,17 +229,30 @@ function ProjectCard({
                 >
                     {String(idx + 2).padStart(2, "0")}
                 </span>
-                {project.github !== "#" && (
-                    <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 bg-white/[0.03] border border-white/[0.06] rounded-lg text-gray-400 hover:text-white hover:bg-white/[0.06] transition-all duration-300"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <Github size={15} />
-                    </a>
-                )}
+                <div className="flex gap-2">
+                    {project.github && project.github !== "#" && (
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-white/[0.03] border border-white/[0.06] rounded-lg text-gray-400 hover:text-white hover:bg-white/[0.06] transition-all duration-300"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <Github size={15} />
+                        </a>
+                    )}
+                    {project.live && project.live !== "#" && (
+                        <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-white/[0.03] border border-white/[0.06] rounded-lg text-gray-400 hover:text-white hover:bg-white/[0.06] transition-all duration-300"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <ExternalLink size={15} />
+                        </a>
+                    )}
+                </div>
             </div>
 
             {/* Title */}
@@ -237,11 +270,10 @@ function ProjectCard({
                 {project.tech.map((t) => (
                     <span
                         key={t}
-                        className={`px-2.5 py-1 text-[11px] font-mono rounded-lg border ${
-                            t === "Python"
+                        className={`px-2.5 py-1 text-[11px] font-mono rounded-lg border ${t === "Python"
                                 ? "bg-python-yellow/10 text-python-yellow border-python-yellow/20"
                                 : "bg-white/[0.03] text-gray-400 border-white/[0.06]"
-                        }`}
+                            }`}
                     >
                         {t}
                     </span>
