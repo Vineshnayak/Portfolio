@@ -57,15 +57,15 @@ Each category is displayed using glass-card UI elements with custom badges, dyna
 
 ### 4. Projects (`/components/Projects.tsx`)
 
-Highlights key projects spanning computer vision, RAG systems, web applications, and CI/CD pipelines.
+Highlights key projects spanning computer vision, machine learning, developer tools, and web applications.
 
 Featured examples include:
 
-* **Sentinel Face Secure** – Secure facial authentication system with liveness detection and encrypted vector embeddings (FastAPI, PyTorch, React).
-* **HygieneVision** – Real-time computer vision system for hygiene compliance using YOLOv8 and FastAPI.
-* **CodeSage** – Local codebase intelligence platform with RAG, AST parsing, and FAISS-based semantic querying.
-* **SpendSphere** – Collaborative expense tracker featuring WebSockets for real-time synchronization and JWT authentication.
-* **PyCalcCI** – Complete CI/CD automated deployment workflow built with Jenkins and pytest.
+* **Sentinel Face Secure** – A facial authentication and security monitoring platform implementing real-time webcam face verification with anti-spoofing algorithms and an AI-powered agent for SOC analysis.
+* **CodeSage** – A codebase analysis tool combining static analysis and Retrieval-Augmented Generation (RAG) to assist with code exploration and refactoring.
+* **FaultSnap** – A black-box recorder for Python applications capturing execution context, local variables, and execution stack into portable archives for easy offline debugging.
+* **HygieneVision** – Real-time computer vision monitoring system for hygiene compliance detection using YOLOv8 and FastAPI.
+* **SpendSphere** – Collaborative expense tracking system supporting both personal and group management with real-time WebSockets synchronization.
 
 Projects are rendered using dynamic grid layouts, animated hover states, and clear tech-stack tagging.
 ---
