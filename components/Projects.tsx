@@ -8,6 +8,7 @@ const projects = [
     {
         title: "Sentinel Face Secure",
         tech: ["React", "FastAPI", "OpenCV", "MongoDB", "Groq API"],
+        highlight: "OpenCV",
         description:
             "A facial authentication and security monitoring platform implementing real-time webcam face verification with anti-spoofing algorithms, a highly responsive React frontend dashboard, and an AI-powered agent (via Groq API) for SOC analysis.",
         gradient: "from-python-yellow to-amber-500",
@@ -18,6 +19,7 @@ const projects = [
     {
         title: "CodeSage",
         tech: ["Python", "RAG", "FAISS", "AST", "Groq API"],
+        highlight: "RAG",
         description:
             "A codebase analysis tool combining static analysis and Retrieval-Augmented Generation (RAG) to assist with code exploration and refactoring. Uses AST parsing, vector embeddings, and dependency graph traversal to answer architectural queries.",
         gradient: "from-purple-500 to-indigo-500",
@@ -28,6 +30,7 @@ const projects = [
     {
         title: "FaultSnap",
         tech: ["Python", "Jinja2", "CLI", "HTML"],
+        highlight: "Python",
         description:
             "A black-box recorder for Python applications. Captures the execution context, local variables, and execution stack when a program crashes, storing them in a portable archive with an interactive offline HTML diagnostic dashboard for easy debugging.",
         gradient: "from-green-500 to-emerald-500",
@@ -38,6 +41,7 @@ const projects = [
     {
         title: "HygieneVision",
         tech: ["Python", "YOLOv8", "OpenCV", "FastAPI", "Streamlit"],
+        highlight: "YOLOv8",
         description:
             "A real-time computer vision monitoring system for hygiene compliance detection. Uses YOLOv8 and Haar Cascades for detecting hair caps and gloves. Features a Streamlit dashboard, FastAPI REST API integration, and MongoDB event logging with debounce logic.",
         gradient: "from-teal-400 to-emerald-500",
@@ -48,6 +52,7 @@ const projects = [
     {
         title: "Fake Logo Detection",
         tech: ["Python", "TensorFlow", "Keras", "OpenCV", "Tkinter"],
+        highlight: "TensorFlow",
         description:
             "A desktop-based image classification application that detects fake and original logos using Convolutional Neural Networks and OpenCV. Includes a Tkinter GUI for real-time image prediction, dataset preprocessing, and confusion matrix reporting.",
         gradient: "from-red-500 to-rose-500",
@@ -58,6 +63,7 @@ const projects = [
     {
         title: "Rainfall Prediction Model",
         tech: ["Python", "Streamlit", "Scikit-learn", "SHAP", "OpenWeather API"],
+        highlight: "Scikit-learn",
         description:
             "A machine learning web application built with Streamlit for predicting rainfall, flood risks, and agricultural suitability. Integrates historical and live weather data via OpenWeather API, featuring SHAP-based Explainable AI (XAI) for feature importance visualization.",
         gradient: "from-cyan-500 to-blue-500",
@@ -68,6 +74,7 @@ const projects = [
     {
         title: "Music Recommendation System",
         tech: ["Python", "Scikit-Learn", "NLTK", "Pandas", "NLP"],
+        highlight: "NLP",
         description:
             "A content-based recommendation engine leveraging NLP techniques to analyze lyrics, song titles, and artist information. Uses TF-IDF vectorization and Cosine similarity matching to process the Spotify Million Song Dataset and recommend similar tracks.",
         gradient: "from-purple-500 to-pink-500",
@@ -78,6 +85,7 @@ const projects = [
     {
         title: "SpendSphere",
         tech: ["Python", "FastAPI", "MongoDB", "WebSockets", "Vanilla JS"],
+        highlight: "WebSockets",
         description:
             "A collaborative expense tracking system supporting both personal and group management. Built with FastAPI and MongoDB, it features JWT authentication, real-time synchronization using WebSockets, budget tracking, and interactive spending analytics.",
         gradient: "from-python-yellow to-orange-500",
@@ -177,10 +185,11 @@ export default function Projects() {
                                     {project.tech.map((t) => (
                                         <span
                                             key={t}
-                                            className={`px-3 py-1.5 text-[11px] font-mono rounded-lg border ${t === "Python"
+                                            className={`px-3 py-1.5 text-[11px] font-mono rounded-lg border ${
+                                                t === project.highlight
                                                     ? "bg-python-yellow/10 text-python-yellow border-python-yellow/20"
                                                     : "bg-white/[0.03] text-gray-400 border-white/[0.06]"
-                                                }`}
+                                            }`}
                                         >
                                             {t}
                                         </span>
@@ -270,10 +279,11 @@ function ProjectCard({
                 {project.tech.map((t) => (
                     <span
                         key={t}
-                        className={`px-2.5 py-1 text-[11px] font-mono rounded-lg border ${t === "Python"
+                        className={`px-2.5 py-1 text-[11px] font-mono rounded-lg border ${
+                            t === project.highlight
                                 ? "bg-python-yellow/10 text-python-yellow border-python-yellow/20"
                                 : "bg-white/[0.03] text-gray-400 border-white/[0.06]"
-                            }`}
+                        }`}
                     >
                         {t}
                     </span>
