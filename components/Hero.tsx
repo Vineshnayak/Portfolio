@@ -5,13 +5,27 @@ import Image from "next/image";
 import { Github, Linkedin, Mail, ChevronDown, Terminal } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-import { FaPython, FaReact, FaGithub, FaBrain, FaDatabase, FaJava } from "react-icons/fa";
-import { SiTensorflow, SiPytorch, SiOpencv, SiFastapi, SiMongodb, SiJupyter, SiScikitlearn, SiStreamlit, SiJavascript, SiTailwindcss, SiPostgresql, SiVercel, SiFigma } from "react-icons/si";
-
-const techIcons = [
-    FaPython, SiTensorflow, SiPytorch, FaReact, SiOpencv, 
-    SiFastapi, SiMongodb, SiJupyter, SiScikitlearn, SiStreamlit, FaGithub,
-    FaBrain, SiJavascript, SiTailwindcss, SiPostgresql, SiVercel, FaJava, SiFigma
+const pythonSnippets = [
+    "import tensorflow as tf",
+    "model.fit(X_train, y_train)",
+    "cv2.imread('image.jpg')",
+    "def predict(data):",
+    "    return model(data)",
+    "pip install opencv",
+    "from sklearn import svm",
+    "np.array(features)",
+    "plt.show()",
+    "class NeuralNet:",
+    "torch.nn.Linear()",
+    "df.describe()",
+    "print('Hello World')",
+    "async def fetch():",
+    "for epoch in range(100):",
+    "loss.backward()",
+    "optimizer.step()",
+    "from fastapi import FastAPI",
+    "model = YOLO('yolov8n.pt')",
+    "import faiss",
 ];
 
 export default function Hero() {
@@ -27,19 +41,19 @@ export default function Hero() {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/10 blur-[200px] rounded-full" />
             </div>
 
-            {/* Floating Tech Icons */}
+            {/* Floating Code Rain */}
             <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
-                {techIcons.map((Icon, i) => (
+                {pythonSnippets.map((snippet, i) => (
                     <div
                         key={i}
-                        className="absolute select-none text-python-blue/[0.15] animate-float-up"
+                        className="absolute select-none text-python-blue/[0.08] font-mono text-xs whitespace-nowrap animate-float-up"
                         style={{
-                            left: `${(i * (100 / techIcons.length))}%`,
-                            animationDuration: `${15 + (i % 5) * 3}s`,
-                            animationDelay: `${(i * 1.5) % 15}s`,
+                            left: `${(i * 6) % 100}%`,
+                            animationDuration: `${15 + (i % 10) * 2}s`,
+                            animationDelay: `${(i * 1.3) % 15}s`,
                         }}
                     >
-                        <Icon size={32 + (i % 3) * 16} />
+                        {snippet}
                     </div>
                 ))}
             </div>
