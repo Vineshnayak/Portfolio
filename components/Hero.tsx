@@ -98,10 +98,10 @@ export default function Hero() {
                     </div>
 
                     <p className="text-base sm:text-lg text-gray-400 max-w-lg leading-relaxed">
-                        Building practical solutions from{" "}
-                        <span className="text-python-yellow">computer vision and machine learning</span> to{" "}
-                        <span className="text-python-blue">developer tools and web applications</span>.
-                        Focused on real-world software development.
+                        Building practical solutions in{" "}
+                        <span className="text-python-yellow">computer vision, machine learning</span>,{" "}
+                        <span className="text-python-blue">developer tools, and web applications</span>, 
+                        with a focus on solving real-world problems through scalable software development.
                     </p>
 
                     {/* Social Links */}
