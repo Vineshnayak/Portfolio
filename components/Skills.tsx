@@ -106,7 +106,7 @@ const skillGroups = [
         ],
     },
     {
-        category: "DevOps & Version Control",
+        category: "CI/CD & Version Control",
         icon: GitBranch,
         color: "from-red-400 to-rose-500",
         accentColor: "text-red-400",
@@ -162,7 +162,7 @@ const skillGroups = [
         borderHover: "hover:border-python-yellow/30",
         items: [
             { name: "VS Code" },
-            { name: "Replit" },
+            { name: "Unix" },
             { name: "Antigravity" },
             { name: "n8n" },
         ],
