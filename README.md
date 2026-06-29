@@ -48,7 +48,7 @@ Organizes technical skills into 11 detailed, domain-based categories:
 * Programming Languages (Python, Java, C++, TypeScript, SQL)
 * AI/ML & Deep Learning (PyTorch, TensorFlow, OpenCV, YOLOv8)
 * Backend Dev & APIs (FastAPI, Flask, WebSockets)
-* DevOps & Version Control (Jenkins, GitHub Actions, Git)
+* CI/CD & Version Control (Jenkins, GitHub Actions, Git)
 * Frontend Development, Data Science, Databases, Cloud Platforms, UI/UX, and Dev Tools.
 
 Each category is displayed using glass-card UI elements with custom badges, dynamic icons, and hover interactions.
