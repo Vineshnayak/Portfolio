@@ -78,7 +78,7 @@ export default function About() {
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
-                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">advanced SQL</strong>, <strong className="text-white font-semibold">CI/CD pipelines</strong>, and <strong className="text-white font-semibold">n8n automation</strong>.</span>
+                                    <span>Currently strengthening expertise in <strong className="text-white font-semibold">Python</strong>, <strong className="text-white font-semibold">AI/ML</strong>, <strong className="text-white font-semibold">System Design</strong>, <strong className="text-white font-semibold">CI/CD pipelines</strong>, and <strong className="text-white font-semibold">n8n automation</strong>.</span>
                                 </li>
                                 <li className="flex gap-3 items-start hover:text-white transition-colors duration-300">
                                     <span className="text-python-yellow font-bold mt-0.5">▹</span>
