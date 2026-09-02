@@ -69,7 +69,7 @@ const cpProfiles = [
     },
     {
         name: "CodeChef",
-        href: "https://www.codechef.com/users/vineshnayak_61",
+        href: "https://www.codechef.com/users/vineshnayak_61?rating=dsa-monday",
         color: "text-orange-400",
     },
     {
